@@ -1,0 +1,52 @@
+[
+  {
+    "targets": [
+      "192.168.27.4:8001"
+    ],
+    "labels": {
+      "job":"spring-boot-service",
+      "application":"sc-authentication-server",
+      "instance":"192.168.27.4:8001"
+    }
+  },
+  {
+    "targets": [
+      "authorization-server:8000"
+    ],
+    "labels": {
+      "job":"spring-boot-service",
+      "application":"sc-authorization-server",
+      "instance":"authorization-server:8000"
+    }
+  },
+  {
+    "targets": [
+      "gateway-web:8443"
+    ],
+    "labels": {
+      "job":"spring-boot-service",
+      "application":"gateway-web",
+      "instance":"gateway-web:8443"
+    }
+  },
+  {
+    "targets": [
+      "organization:8010"
+    ],
+    "labels": {
+      "job":"spring-boot-service",
+      "application":"sc-organization",
+      "instance":"organization:8010"
+    }
+  },
+  {
+    "targets": [
+      "monitor-admin:8022"
+    ],
+    "labels": {
+      "job":"spring-boot-service",
+      "application":"sc-monitor-admin",
+      "instance":"monitor-admin:8022"
+    }
+  }
+]
